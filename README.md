@@ -1,6 +1,6 @@
 # Calorie-Tracker
 
-<h2>End of year project 👨‍💻 2020/2021</h2>
+<h2>End of year project 👨‍💻</h2>
 
 This is my mobile web developemnt end of year submission, I built a simple calorie tacker web app that makes use of the MVC design pattern. The app allows the user to view their daily calorie intake, add to the total, and reset the total... there are a few other features however tracking calories is the focus.
 
