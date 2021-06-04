@@ -1,0 +1,90 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Calorie Tracker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+
+        body {
+            font: 20px;
+            line-height: 1.8;
+            /*CSS to make background mobile responsive*/
+            background-image: url("Images/Chopping_Board_Health.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #212529; /*Matte Grey*/
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .bg-1 {
+            background-color: #000000; /* Black */
+            color: #fff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        /* Unvisited Link */
+        a:link {
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+        }
+
+        /* Visited Link */
+        a:visited {
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+        }
+
+        /* Hover Link */
+        a:hover {
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+        }
+
+        /* Selected Link */
+        a:active {
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid text-center">
+
+        @Html.ActionLink("Start Tracking Calories", "Index", "Home", new { @class = "margin" })
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</body>
+</html>

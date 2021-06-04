@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Calorie Tracker</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <nav class="navbar navbar-default bg-3">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand"><!--navbar-brand was messign up navbar image-->
+                    <img src="~/Images/AppIcon2.png" class="img-responsive" style=" width:60px; height:60px; padding-bottom: 10px" />
+
+                </a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav text-center">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Calorie Info", "About", "Home")</li>
+                    <li>@Html.ActionLink("Foods", "Index", "Foods")</li>
+                    <li>@Html.ActionLink("HL Podcasts", "Podcasts", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                         @Html.Partial("_LoginPartial")
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container body-content">
+        @RenderBody()
+
+    </div>
+
+    <footer class="container-fluid text-center">
+        <hr />
+        <div class="row">
+            <div class="col-sm-4"> Developer: Swan Software Ltd</div>
+            <div class="col-sm-4"> Calorie Tracker V2 <span class="glyphicon glyphicon-copyright-mark"></span> @DateTime.Now.Year</div>
+            <div class="col-sm-4">  HTML, CSS, Bootstrap, and C# </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center"> @Html.ActionLink("Contact Us", "Contact", "Home", new { area = "" }, new { @class = "body" }) </div>
+        </div>
+
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

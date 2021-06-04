@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <title>Calorie Tracker</title>
+
+    <style>
+
+        body {
+            background-color: #E4E8E8;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        h2 {
+            color: #3C5099;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Container-->
+    <div class="container-fluid">
+
+        <h2 class="text-center">Welcome to Calorie Tracker!</h2>
+        <br />
+
+        <div class="row" style="padding-top: 5em;">
+
+            <div class="col-sm-4"> <img src="~/Images/Welcome.jpg" class="img-responsive margin" style="width:100%;height:250px" alt="Image" /> </div>
+            <div class="col-sm-8 text-justify">
+                <p>
+                    Welcome to the Calorie Tracker app, this mobile responsive web app will allow you to track your daily calorie intake, help you better understand calories,
+                    and also give you access to the <b>Healthy Lifestyle Podcast.</b> If you wish to leave a message to our developer please visit the <b>contact</b> page,
+                    please fill in your email, full name and the message you wish to leave and our developer will read the message ASAP... both praise and crtisism welcome.
+                    If you want to find out how to utalise the app please see below for instructions.
+                </p>
+
+                <br />
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:5em;">
+            <div class="col-sm-8 text-justify">
+                <h2>Instructions</h2>
+                <br />
+                <ul>
+                    <li>Firstly login to the Calorie tracker via log in page</li>
+                    <li>Once logged in visit the Foods page</li>
+                    <li>Below the navbar your currenty daily calories are listed</li>
+                    <li>You can reset your daily calories by clicking the <code>Reset</code> button</li>
+                    <li>You can filter through all different categories of food with the categories section at the left handside</li>
+                    <li>Under each food item there is the calorie amount listed</li>
+                    <li>Click <code>Add</code> if you wash to add this food and it's calories to your daily intake</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <img src="~/Images/Instructions.jpg" class="img-responsive margin" style="width:100%; height:300px" alt="Image" />
+            </div>
+        </div>
+    </div>
+</body>
