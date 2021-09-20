@@ -9,6 +9,7 @@ Technologies/Languages I used are as follows...
 * CSS
 * HTML
 * Bootsrap
+* MVC
 * Visual Studio 2019
  
 There is a lot I would like to imporove on in the project like making the front end **much more appealing** to the eye but there was time constraints I had to adhere to.
