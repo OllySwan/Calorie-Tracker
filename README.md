@@ -1,6 +1,6 @@
 # Calorie-Tracker
 
-<h2>End of year project (HNC) 👨‍💻</h2>
+<h2> CRUD App (HNC) 👨‍💻</h2>
 
 This is my mobile web developemnt end of year submission, I built a simple calorie tacker web app that makes use of the MVC design pattern. The app allows the user to view their daily calorie intake, add to the total, reset the total, and listen to podcasts via the application... there are a few other features however tracking calories is the focus.
 
